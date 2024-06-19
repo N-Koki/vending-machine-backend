@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <!-- Transaction単位のSQLキャッシュを有効にしたい場合は以下設定2つ削除すること -->
+        <setting name="cacheEnabled" value="false"/>
+        <setting name="localCacheScope" value="STATEMENT"/>
+        <setting name="autoMappingBehavior" value="FULL"/>
+        <setting name="safeResultHandlerEnabled" value="false"/>
+        <setting name="defaultFetchSize" value="100"/>
+        <setting name="argNameBasedConstructorAutoMapping" value="true"/>
+    </settings>
+</configuration>

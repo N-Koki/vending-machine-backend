@@ -1,0 +1,14 @@
+# postgres DB????
+spring:
+  datasource:
+    url: jdbc:postgresql://vending-machine-db:5432/vendingmachine
+    username: postgres
+    password: password
+    driver-class-name: org.postgresql.Driver
+    initialization-mode: never
+  jackson:
+    deserialization:
+      adjust_dates_to_context_time_zone: false
+
+mybatis:
+  config-location: classpath:/db/mybatis/mybatis-config.xml

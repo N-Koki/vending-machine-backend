@@ -1,4 +1,4 @@
-package com.vendingmachine.api
+package com.vendingmachine
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

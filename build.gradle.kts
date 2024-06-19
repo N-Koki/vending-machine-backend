@@ -12,7 +12,7 @@ plugins {
 	id("org.jetbrains.kotlin.plugin.noarg") version "1.7.10"
 }
 
-group = "com.vendingmachine.api"
+group = "com.vendingmachine"
 version = "0.0.1-SNAPSHOT"
 
 java {
