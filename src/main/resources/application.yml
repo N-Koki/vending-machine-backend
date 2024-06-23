@@ -1,4 +1,4 @@
-# postgres DB????
+# postgres DB設定
 spring:
   datasource:
     url: jdbc:postgresql://vending-machine-db:5432/vendingmachine
