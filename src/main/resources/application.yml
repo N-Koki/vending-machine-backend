@@ -1,7 +1,7 @@
 # postgres DB設定
 spring:
   datasource:
-    url: jdbc:postgresql://vending-machine-db:5432/vendingmachine
+    url: jdbc:postgresql://localhost:5432/vendingmachine
     username: postgres
     password: password
     driver-class-name: org.postgresql.Driver
