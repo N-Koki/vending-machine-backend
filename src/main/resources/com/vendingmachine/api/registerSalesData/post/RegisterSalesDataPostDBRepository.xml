@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--suppress SqlNoDataSourceInspection, SqlDialectInspection-->
+<mapper namespace="com.vendingmachine.api.registerSalesData.post.RegisterSalesDataPostDBRepository">
+    <insert id="registerSalesData">
+        INSERT INTO sales_data (
+            column_number,
+            sales_juice_name,
+            sales_price,
+            sales_datetime
+        )
+        VALUES (
+            #{columnNumber},
+            #{salesJuiceName},
+            #{salesPrice},
+            current_timestamp
+        )
+    </insert>
+</mapper>
