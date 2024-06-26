@@ -5,7 +5,7 @@ import com.vendingmachine.api.getjuiceList.get.data.JuiceListGetResponse
 import org.springframework.stereotype.Service
 
 @Service
-class JuiceListGetService(val mapper: JuiceListGetRepository) {
+class JuiceListGetService(val mapper: JuiceListGetDBRepository) {
   fun execute(): JuiceListGetResponse {
     val juiceList = readJuiceList()
 

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--suppress SqlNoDataSourceInspection, SqlDialectInspection-->
+<mapper namespace="com.vendingmachine.api.updateJuice.post.UpdateJuicePostDBRepository">
+    <update id="updateJuice">
+        UPDATE
+            vending_machine_column
+        SET
+            juice_name = #{juiceName},
+            juice_image = #{juiceImage},
+            price = #{price},
+            temperature_display = #{temperatureDisplay},
+            stock = #{stock}
+        WHERE
+            column_number = #{columnNumber}
+    </update>
+</mapper>

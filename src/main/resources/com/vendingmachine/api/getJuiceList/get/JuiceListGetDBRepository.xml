@@ -3,7 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!--suppress SqlNoDataSourceInspection, SqlDialectInspection-->
-<mapper namespace="com.vendingmachine.api.getjuiceList.get.JuiceListGetRepository">
+<mapper namespace="com.vendingmachine.api.getjuiceList.get.JuiceListGetDBRepository">
     <select id="getJuiceList">
         SELECT column_number, juice_name, juice_image, price, temperature_display, stock
         FROM vending_machine_column
