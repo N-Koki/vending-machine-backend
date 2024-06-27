@@ -7,5 +7,6 @@
     <select id="getJuiceList">
         SELECT column_number, juice_name, juice_image, price, temperature_display, stock
         FROM vending_machine_column
+        ORDER BY column_number ASC
     </select>
 </mapper>
